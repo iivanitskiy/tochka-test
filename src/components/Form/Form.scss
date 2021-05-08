@@ -1,0 +1,40 @@
+@import '../../style.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  @extend %regular-text;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 1;
+
+  &.halfWidth {
+    max-width: 172px;
+  }
+  
+  & input {
+    outline: none;
+    margin: 8px 0 16px 0;
+    height: 42px;
+    border: none;
+    padding-left: 14px;
+    outline: none;
+    float: left;
+    width: calc(100% - 16px);
+  }
+  
+  & input::placeholder {
+    @extend %placheholder-text;
+    text-align: initial;
+  }
+
+  & input::placeholder {
+    @extend %placheholder-text;
+    text-align: initial;
+  }
+  
+  .form__title {
+    margin: 0;
+  }
+}

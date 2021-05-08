@@ -1,0 +1,23 @@
+$font-stack: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$bg-main_color: #343539;
+$bg-grey: #4B4B4F;
+$bg-red: #EF483E;
+
+
+%regular-text {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+%placheholder-text::-moz-placeholder {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #CFCFCF;
+}

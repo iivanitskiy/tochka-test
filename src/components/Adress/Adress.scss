@@ -1,0 +1,46 @@
+@import '../../style.scss';
+
+%adress-input {
+  outline: none;
+  border: none;
+  color: #FFF;
+}
+
+.adress {
+  margin-bottom: 4px;
+  margin-right: 35px;
+
+  & input {
+    background: url(../../images/red-dot.png) no-repeat left 8px center;
+    padding-left: 35px;
+    height: 44px;
+    max-width: 693px;
+    width: 100%;
+    background-color: $bg-grey;
+    @extend %adress-input;
+  }
+  
+  & input::placeholder {
+    @extend %placheholder-text;
+  }
+
+  & button {
+    cursor: pointer;
+    width: 119px;
+    height: 24px;
+    background-color: #717174;
+    position: relative;
+    float: right;
+    margin: -35px -15px 0 0;
+    @extend %adress-input;
+  }
+}
+
+.second input {
+  background: url(../../images/white-dot.png) no-repeat left 8px center;
+  background-color: $bg-grey;
+}
+
+.second button {
+  opacity: .3;
+}

@@ -1,0 +1,105 @@
+@import '../style';
+
+@mixin section-margin($mb) {
+  margin-bottom: $mb;
+}
+
+.section {
+  width: 100%;
+  max-width: 728px;
+  @include section-margin(40px);
+
+  &.route {
+    @include section-margin(24px);
+  }
+  
+  &.transport {
+    @include section-margin(24px);
+  }
+  
+  &.time {
+    @include section-margin(16px);
+  }
+
+  .select__container {
+    display: flex;
+  }
+  
+  .cargo__container {
+    margin: 16px 0 0 0;
+    display: flex;
+  }
+  
+  .adress__container {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  
+    .adress__text {
+      @extend %regular-text;
+    }  
+  }
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  color: #FFF;
+  white-space: nowrap;
+}
+
+.subtitle {
+  display: flex;
+  margin: 0 0 16px 0;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+  white-space: nowrap;
+
+  .number {
+    margin: 3px 8px 0 0;
+    padding-right: 1px;
+    height: 24px;
+    width: 24px;
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    background: $bg-red;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+@media (min-width : 400px) and (max-width: 650px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width : 200px) and (max-width: 400px) {
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

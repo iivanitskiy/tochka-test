@@ -1,0 +1,13 @@
+@import './style.scss';
+
+.App {
+  background-color: $bg-main_color;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 3%;
+}
+
+#root {
+  min-width: 375px;
+}

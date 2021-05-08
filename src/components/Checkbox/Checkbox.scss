@@ -1,0 +1,39 @@
+@import '../../style.scss';
+
+.checkbox {
+  @extend %regular-text;
+  display: flex;
+
+  .checkbox__text {
+    margin: 6px 0 0 12px;
+  }
+  
+  & input[type="checkbox"] {
+    display: none;
+  }
+  
+  & input[type="checkbox"] + span {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    vertical-align: middle;
+    background: #FFF left top no-repeat;
+    border: 2px solid #FFF;
+    background-color: $bg-main_color;
+    cursor: pointer;
+  }
+  
+  & input[type="checkbox"]:checked + span {
+    border: 2px solid $bg-red;
+    background: url(../../images/check.png) $bg-red no-repeat center;
+  }
+}
+
+.checkbox__container {
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}

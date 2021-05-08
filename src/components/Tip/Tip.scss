@@ -1,0 +1,36 @@
+@import '../../style.scss';
+
+.tip {
+  margin-right: 24px;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  left: 835px;
+  max-width: 356px;
+  height: auto;
+  background: $bg-grey;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+  .tip__text {
+    margin: 24px;
+    @extend %placheholder-text;
+    color: #FFF;
+  }
+}
+
+
+
+@media (min-width : 200px) and (max-width: 1000px){
+  .tip {
+    position: static;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    max-width: 728px;
+  }
+
+  .tip__text {
+    margin: 0;
+    padding: 24px;
+  }
+}

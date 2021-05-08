@@ -1,0 +1,26 @@
+@import '../../style.scss';
+
+.select {
+  display: flex;
+  flex-direction: column;
+  @extend %regular-text;
+  width: 100%;
+  flex-shrink: 1;
+  
+  &:first-child {
+    margin-right: 12px;
+  }
+  
+  &.fullWidth {
+    max-width: 356px;
+  }
+  
+  &.halfWidth {
+    max-width: 172px;
+  }
+  
+  .select__title {
+    white-space: nowrap;
+    margin: 0;
+  }
+}

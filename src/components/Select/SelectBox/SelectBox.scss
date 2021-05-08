@@ -1,0 +1,90 @@
+@import '../../../style.scss';
+
+.select-box__box {
+  width: 100%;
+
+  .select-box__container {
+    background-color: #FFF;
+    margin: 8px 0 0 0;
+    height: 44px;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    width: 100%;
+
+    .select-box__selected-item {
+      white-space: nowrap;
+      width: 90%;
+      color: #CFCFCF;
+      display: inline-block;
+      height: auto;
+      padding: 13px 0 0 12px;
+    }
+    
+    .select-box__selected-item.black {
+      color: #000;
+    }
+
+    .select-box__arrow {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      float: right;
+      margin: -23px 0 0 0;
+    }
+
+    .select-box__arrow_down {
+      position: absolute;
+      width: 100%; 
+      height: 100%; 
+      background: url(../../../images/arrow.png) no-repeat center;
+      transform: rotate(180deg)
+    }
+    
+    .select-box__arrow_up {
+      position: absolute;
+      width: 100%; 
+      height: 100%; 
+      background: url(../../../images/arrow.png) no-repeat center; 
+    }
+  }
+  
+  .select-box__items {
+    transition: 1s;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    position: absolute;
+    z-index: 1;
+    width: 356px;
+
+    &.halfWidth {
+      width: 172px;
+    }
+
+    & div {    
+      padding: 6px 0 6px 12px;
+      color: #000;
+      background-color: #FFF;
+    }
+    
+    & div.selected {
+      background-color: #a7a7a7;
+    }
+    
+    & div:hover {
+      background-color: $bg-red;
+    }
+  }
+}
